@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "_default": {
+            "link": "wedding"
+        }, 
+        "wedding": {
+            "applicationId": "HLQJJtZjEUZKXKuqqztTENf1Y6vOdbxwsDhoryD9", 
+            "masterKey": "Y09TlB5bNRc64AldE5haX4EHLVLD5LncnCQapZbP"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.15"
+    }
+}
