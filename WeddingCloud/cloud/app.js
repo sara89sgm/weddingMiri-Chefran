@@ -14,9 +14,39 @@ app.get('/hello', function(req, res) {
   res.render('hello', { message: 'Congrats, you just set up your app!' });
 });
 
-app.get('/familia', function(req, res) {
-  res.render('hello', { message: 'Familia template' });
+//COMUN
+
+app.get('/hotels', function(req, res) {
+  res.render('location', { location: 'Whatever' });
 });
+
+app.get('/presents', function(req, res) {
+  res.render('presents', { presents: 'Whatever' });
+});
+
+//FAMILIA
+app.get('/familia', function(req, res) {
+  res.render('familia', { message: 'Familia template' });
+});
+
+app.get('/familia/location', function(req, res) {
+  res.render('location', { location: 'Whatever' });
+});
+
+app.get('/familia/menu', function(req, res) {
+  res.render('menu', { menu: 'Whatever' });
+});
+
+//NOCHE
+
+app.get('/location', function(req, res) {
+  res.render('location', { location: 'Whatever' });
+});
+
+app.get('/menu', function(req, res) {
+  res.render('menu', { menu: 'Whatever' });
+});
+
 
 
 
