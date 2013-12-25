@@ -1,4 +1,6 @@
-
+/*
+* Author:      Sara Gozalo Macias
+*/
 // These two lines are required to initialize Express in Cloud Code.
 var express = require('express');
 var app = express();
@@ -10,41 +12,14 @@ app.use(express.bodyParser());    // Middleware for reading request body
 
 // This is an example of hooking up a request handler with a specific request
 // path and HTTP verb using the Express routing API.
-app.get('/hello', function(req, res) {
-  res.render('hello', { message: 'Congrats, you just set up your app!' });
+app.get('/', function(req, res) {
+  res.render('page', { message: 'Congrats, you just set up your app!', type: 'night' });
 });
 
-//COMUN
-
-app.get('/hotels', function(req, res) {
-  res.render('location', { location: 'Whatever' });
-});
-
-app.get('/presents', function(req, res) {
-  res.render('presents', { presents: 'Whatever' });
-});
 
 //FAMILIA
 app.get('/familia', function(req, res) {
-  res.render('familia', { message: 'Familia template' });
-});
-
-app.get('/familia/location', function(req, res) {
-  res.render('location', { location: 'Whatever' });
-});
-
-app.get('/familia/menu', function(req, res) {
-  res.render('menu', { menu: 'Whatever' });
-});
-
-//NOCHE
-
-app.get('/location', function(req, res) {
-  res.render('location', { location: 'Whatever' });
-});
-
-app.get('/menu', function(req, res) {
-  res.render('menu', { menu: 'Whatever' });
+  res.render('page', { message: 'Familia template', type: 'familia'});
 });
 
 
