@@ -10,16 +10,11 @@ app.set('views', 'cloud/views');  // Specify the folder to find templates
 app.set('view engine', 'ejs');    // Set the template engine
 app.use(express.bodyParser());    // Middleware for reading request body
 
-// This is an example of hooking up a request handler with a specific request
-// path and HTTP verb using the Express routing API.
-app.get('/', function(req, res) {
-  res.render('night_page', { message: 'Congrats, you just set up your app!', type: 'night' });
-});
 
 
 //FAMILIA
-app.get('/familia', function(req, res) {
-  res.render('family_page', { message: 'Familia template', type: 'familia'});
+app.get('/night', function(req, res) {
+  res.render('night_page');
 });
 
 
