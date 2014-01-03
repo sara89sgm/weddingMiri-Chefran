@@ -1,0 +1,19 @@
+/* ===== Night Specific Styles ==================================================
+   Author: Sara Gozalo
+   ========================================================================== */
+@media all and (max-width: 767px) {
+
+
+   #bg-image{
+        display: none;
+    }
+
+    body {
+        /*background-position: 50% 20%;*/
+        background-image:url('../img/bg-pic-night-mobile.jpg');
+        background-size:100%;
+        background-repeat:no-repeat;
+		background-attachment:fixed;
+        
+    }
+}
