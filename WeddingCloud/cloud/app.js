@@ -13,7 +13,7 @@ app.use(express.bodyParser());    // Middleware for reading request body
 
 
 //FAMILIA
-app.get('/night', function(req, res) {
+app.get('/cumpleboda', function(req, res) {
   res.render('night_page');
 });
 
