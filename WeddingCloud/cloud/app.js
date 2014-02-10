@@ -1,6 +1,7 @@
 /*
 * Author:      Sara Gozalo Macias
 */
+
 // These two lines are required to initialize Express in Cloud Code.
 var express = require('express');
 var app = express();
@@ -15,6 +16,15 @@ app.use(express.bodyParser());    // Middleware for reading request body
 //FAMILIA
 app.get('/cumpleboda', function(req, res) {
   res.render('night_page');
+});
+
+//TIMELINE
+app.get('/lookback/chefran', function(req, res) {
+  res.render('chefran.ejs');
+});
+
+app.get('/lookback/miriam', function(req, res) {
+  res.render('miriam.ejs');
 });
 
 
